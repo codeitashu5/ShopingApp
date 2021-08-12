@@ -2,4 +2,7 @@
     <string name="app_name">Shoping App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total">Price: %d</string>
+    <string name="quantity">Jerseys: %d</string>
+
 </resources>

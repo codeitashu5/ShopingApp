@@ -10,18 +10,12 @@ import com.example.shopingapp.recycler.CustomAdapter
 import com.example.shopingapp.recycler.Lists
 import com.example.shopingapp.recycler.OnButtonClick
 
-class MainActivity : AppCompatActivity(),OnButtonClick {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        val recyclerView  = findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.adapter = CustomAdapter(Lists().createList(),this)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-    }
 
-    override fun onButtonClicked() {
-        Toast.makeText(this, "Added", Toast.LENGTH_SHORT).show()
     }
 }
