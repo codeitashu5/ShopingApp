@@ -8,14 +8,14 @@
 
    <LinearLayout
        android:layout_width="match_parent"
-       android:orientation="horizontal"
+       android:orientation="vertical"
        android:layout_margin="8dp"
        android:layout_height="wrap_content">
        <TextView
-           tools:text="@string/total"
+            android:text="@string/total"
            style="@style/text_style" />
        <TextView
-           tools:text="@string/quantity"
+           android:text="@string/quantity"
            style="@style/text_style" />
    </LinearLayout>
 
