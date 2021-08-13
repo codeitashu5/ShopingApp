@@ -12,9 +12,11 @@
        android:layout_margin="8dp"
        android:layout_height="wrap_content">
        <TextView
+           android:id="@+id/price_total"
             android:text="@string/total"
            style="@style/text_style" />
        <TextView
+           android:id="@+id/jersey_total"
            android:text="@string/quantity"
            style="@style/text_style" />
    </LinearLayout>

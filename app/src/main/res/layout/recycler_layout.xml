@@ -2,6 +2,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
@@ -9,8 +10,8 @@
     >
 
     <LinearLayout
-        android:layout_marginRight="4dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
         android:background="@drawable/frame"
@@ -27,17 +28,13 @@
             android:layout_width="150dp"
             android:layout_height="200dp"
             tools:src = "@drawable/jerse5"
-            />
+            android:contentDescription="@string/image_of_product" />
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_orange_light"
-            android:text="add"
-            android:layout_margin="8dp"
-            android:layout_gravity="right"
-            />
+            android:contentDescription="add dress"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            style="@style/floating_style" />
 
 
     </LinearLayout>
@@ -64,15 +61,13 @@
             tools:src = "@drawable/jerse5"
             />
 
-        <Button
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_orange_light"
-            android:text="add"
-            android:layout_margin="8dp"
-            android:layout_gravity="right"
-            />
+            android:contentDescription="add dress"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            style="@style/floating_style" />
 
 
     </LinearLayout>

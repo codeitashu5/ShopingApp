@@ -1,25 +1,25 @@
 package com.example.shopingapp.recycler
 
+import android.app.PendingIntent.getActivity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.ToggleButton
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shopingapp.MainActivity
 import com.example.shopingapp.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class CustomAdapter(val list:MutableList<Data>,val o:OnButtonClick) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         init {
-            val btn1  = itemView.findViewById<Button>(R.id.btn1)
-            val btn2  = itemView.findViewById<Button>(R.id.btn2)
-            btn1.setOnClickListener {
-                o.onButtonClicked()
-            }
-            btn2.setOnClickListener {
-                o.onButtonClicked()
-            }
+           val btn1 = itemView.findViewById<FloatingActionButton>(R.id.btn1)
+
 
         }
 
@@ -48,5 +48,5 @@ class CustomAdapter(val list:MutableList<Data>,val o:OnButtonClick) : RecyclerVi
 }
 
 interface OnButtonClick{
-    fun onButtonClicked()
+    fun onButtonClicked(b:Boolean)
 }
